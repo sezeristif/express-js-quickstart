@@ -6,10 +6,11 @@ Rename the .envexample to .env and add your MONGO_URI
 
 ```
 yarn install
+```
 
 ### Run Server
 
-```
+
 
 ```
 yarn server
