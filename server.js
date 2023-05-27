@@ -17,6 +17,10 @@ app.use(morgan("combined")); // for logging
 app.use("/api/goals", require("./routes/goalRoutes"));
 app.use("/api/users", require("./routes/userRoutes"));
 
+app.get("/", (_, res) => {
+  res.send("API is running...");
+});
+
 app.use(errorHandler);
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
